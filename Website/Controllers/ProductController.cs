@@ -29,14 +29,14 @@ namespace Website.Controllers
             if (string.IsNullOrEmpty(category))
             {
                 products = _productRepository.Products.OrderBy(p => p.ProductId);
-                currentCategory = "All drinks";
+                currentCategory = "All Products";
             }
             else
             {
-                if (string.Equals("Alcoholic", _category, StringComparison.OrdinalIgnoreCase))
-                    products = _productRepository.Products.Where(p => p.Category.CategoryName.Equals("Alcoholic")).OrderBy(p => p.Name);
+                if (string.Equals("Men", _category, StringComparison.OrdinalIgnoreCase))
+                    products = _productRepository.Products.Where(p => p.Category.CategoryName.Equals("Men")).OrderBy(p => p.Name);
                 else
-                    products = _productRepository.Products.Where(p => p.Category.CategoryName.Equals("Non-alcoholic")).OrderBy(p => p.Name);
+                    products = _productRepository.Products.Where(p => p.Category.CategoryName.Equals("Women")).OrderBy(p => p.Name);
 
                 currentCategory = _category;
             }

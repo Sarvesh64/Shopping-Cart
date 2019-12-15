@@ -15,8 +15,9 @@ namespace Website.Data.Mocks
             {
                 return new List<Category>
                      {
-                         new Category { CategoryName = "Alcoholic", Description = "All alcoholic drinks" },
-                         new Category { CategoryName = "Non-alcoholic", Description = "All non-alcoholic drinks" }
+                         new Category { CategoryName = "Men", Description = "All men products" },
+                         new Category { CategoryName = "Women", Description = "All women products" },
+                         new Category { CategoryName = "Kids", Description = "All kids products" }
                      };
             }
         }
