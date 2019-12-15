@@ -3,7 +3,12 @@
 }
 
 nav{
-    padding:8px;
+    padding:10px;
+}
+
+.navbar {
+    background-color: #1DB954;
+    color: #1DB954;
 }
 
 .loginForm{
@@ -14,23 +19,23 @@ nav{
      margin-top:5%;
 }
 
-.orderForm{
-     margin-top:5%;
-     border-radius:20px;
-     border-style:solid;
-     border-color:#2fa4e7;
+.orderForm {
+    margin-top: 5%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #1DB954;
 }
 
 a.remove{
     text-decoration:none;
 }
 a.remove:hover{
-    color:blue;
+    color:darkred;
 }
 
 .center_div{
     margin: 0 auto;
-    width:80% /* value of your choice which suits your alignment */
+    width:100% /* value of your choice which suits your alignment */
 }
 
 .marginTop{
